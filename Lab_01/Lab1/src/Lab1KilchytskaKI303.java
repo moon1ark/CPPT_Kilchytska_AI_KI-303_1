@@ -8,7 +8,13 @@ import java.util.Scanner;
  * Програма генерує зубчатий масив із заштрихованих областей квадратної матриці.
  * Введення: розмірність матриці (n) і символ-заповнювач.
  * Виведення: зубчатий масив на екран і у текстовий файл.
+ *
+ * @author Adriana
+ * @version 1.0
+ * @since version 1.0
+ *
  */
+
 public class Lab1KilchytskaKI303 {
 
     public static void main(String[] args) {
