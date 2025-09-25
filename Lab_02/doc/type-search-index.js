@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"KI303.Kilchytska.Lab2","l":"ControlButtons"},{"p":"KI303.Kilchytska.Lab2","l":"Monitor"},{"p":"KI303.Kilchytska.Lab2","l":"MonitorTest"},{"p":"KI303.Kilchytska.Lab2","l":"PowerSupply"},{"p":"KI303.Kilchytska.Lab2","l":"Screen"}];updateSearchResults();
