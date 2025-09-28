@@ -18,7 +18,7 @@ def generate_jagged_matrix(n: int, filler: str) -> List[List[str]]:
     Генерує "зубчатий" масив: кожен ряд містить n//2 символів-заповнювачів.
     Повертає список рядків (як списки символів).
     """
-    half = n // 2
+    half = (n // 2) - 1
     return [[filler] * half for _ in range(n)]
 
 def format_matrix_lines(jagged: List[List[str]]) -> List[str]:
@@ -31,9 +31,9 @@ def format_matrix_lines(jagged: List[List[str]]) -> List[str]:
     lines = []
     for i, row in enumerate(jagged):
         if i < n // 2:
-            lines.append("  " * half + " ".join(row))
+            lines.append("  " * half + " ".join(row) + " " + "&")
         else:
-            lines.append(" ".join(row))
+            lines.append(" ".join(row) + " " + "&")
     return lines
 
 def write_output_file(lines: List[str], filename: str = "output.txt") -> None:
