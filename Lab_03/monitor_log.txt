@@ -1,0 +1,7 @@
+Monitor created: 27.0" IPS (2560x1440), Power: 50W, state=OFF, Brightness=50, Contrast=50
+TouchScreenMonitor initialized with touch support
+Monitor turned ON
+Touch at (150, 300)
+Display refreshed
+Monitor turned OFF
+Log closed.
