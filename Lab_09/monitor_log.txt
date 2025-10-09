@@ -1,0 +1,9 @@
+Monitor created: 24" IPS (1920x1080), Power: 40W, state=OFF, Brightness=50, Contrast=50
+Monitor turned ON
+Brightness increased to 51
+Contrast increased to 51
+Monitor info requested
+Brightness decreased to 50
+Contrast decreased to 50
+Monitor turned OFF
+Log closed.
