@@ -3,7 +3,7 @@ package KI303.Kilchytska.Lab3;
 /**
  * Інтерфейс Touchable описує взаємодію з сенсорним екраном.
  */
-public interface Touchable {
+public abstract interface Touchable {
     /**
      * Метод для обробки натискання на екран.
      * @param x координата X дотику
