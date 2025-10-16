@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"KI303.Kilchytska.Lab6","c":"ShoppingCenterDriver","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"KI303.Kilchytska.Lab6","c":"ShoppingCenterDriver","l":"ShoppingCenterDriver()","u":"%3Cinit%3E()"}];updateSearchResults();
