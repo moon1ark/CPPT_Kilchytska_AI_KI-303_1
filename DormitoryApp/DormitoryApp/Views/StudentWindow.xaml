@@ -1,0 +1,29 @@
+﻿<Window x:Class="DormitoryApp.Views.StudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Кабінет Студента" Height="400" Width="500" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <StackPanel>
+
+            <Label x:Name="WelcomeLabel" Content="Вітаємо, Студент!" FontSize="20" HorizontalAlignment="Center"/>
+
+            <UniformGrid Columns="2" Rows="3" Margin="0,20">
+                <Button Content="Подати заявку" Click="OpenForm_Click"/>
+                <Button Content="Статус заявки" Click="OpenStatus_Click"/>
+                <Button Content="Редагувати заявку" Click="OpenEdit_Click"/>
+                <Button Content="Вільні кімнати" Click="OpenAvailability_Click"/>
+                <Button Content="Повідомлення" Click="OpenMessages_Click"/>
+
+                <Button Content="Вихід" Click="Logout_Click">
+                    <Button.Style>
+                        <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                            <Setter Property="Background" Value="#FF5733"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+            </UniformGrid>
+        </StackPanel>
+    </Grid>
+</Window>

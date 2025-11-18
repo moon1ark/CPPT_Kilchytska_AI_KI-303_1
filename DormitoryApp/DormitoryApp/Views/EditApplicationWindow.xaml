@@ -1,0 +1,18 @@
+﻿<Window x:Class="DormitoryApp.Views.EditApplicationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редагування заявки" Height="350" Width="400"
+        Loaded="Window_Loaded">
+    <StackPanel Margin="15">
+        <Label Content="ПІБ:"/>
+        <TextBox x:Name="NameTxt" Text="Завантаження..."/>
+
+        <Label Content="Студентський квиток:"/>
+        <TextBox x:Name="IdTxt" Text="Завантаження..."/>
+
+        <Label Content="Примітка (пільги):"/>
+        <TextBox Height="60" x:Name="NoteTxt" Text="Завантаження..."/>
+
+        <Button Content="Зберегти зміни" Click="Submit_Click" Margin="0,10"/>
+    </StackPanel>
+</Window>

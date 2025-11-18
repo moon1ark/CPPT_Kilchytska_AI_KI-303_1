@@ -27,6 +27,7 @@ class Store implements RentableSpace {
     private String storeName;
     private String productCategory;
     private double monthlyRent;
+    public static int count;
 
     /**
      * Конструктор для створення екземпляра магазину.
@@ -38,6 +39,7 @@ class Store implements RentableSpace {
         this.storeName = storeName;
         this.productCategory = productCategory;
         this.monthlyRent = monthlyRent;
+        count +=1;
     }
 
     @Override
@@ -70,6 +72,7 @@ class Restaurant implements RentableSpace {
     private String cuisineType;
     private int seatingCapacity;
     private double monthlyRent;
+    public static int count;
 
     /**
      * Конструктор для створення екземпляра ресторану.
@@ -83,6 +86,7 @@ class Restaurant implements RentableSpace {
         this.cuisineType = cuisineType;
         this.seatingCapacity = seatingCapacity;
         this.monthlyRent = monthlyRent;
+        count += 1;
     }
 
     @Override
@@ -204,15 +208,31 @@ public class ShoppingCenterDriver {
         Restaurant italianRestaurant = new Restaurant("Bella Italia", "Italian", 80, 7200.50);
         Store clothingStore = new Store("Fashion Hub", "Clothes", 6100.00);
         Restaurant cafe = new Restaurant("The Daily Grind", "Coffe shop", 40, 4800.00);
+        Restaurant cafe1 = new Restaurant("The Daily", "Coffe shop", 40, 4800.00);
 
         // Додавання орендарів до ТЦ
         mall.addTenant(electronicsStore);
         mall.addTenant(italianRestaurant);
         mall.addTenant(clothingStore);
+        mall.addTenant(cafe1);
         mall.addTenant(cafe);
 
         // Відображення всіх орендарів
         mall.displayAllTenants();
+
+        System.out.println("Restaurant count: " + Restaurant.count);
+        System.out.println("Store count: " + Store.count);
+
+        if (Restaurant.count >= Store.count){
+            System.out.println("More restaurants");
+        }
+        else if (Restaurant.count <= Store.count){
+            System.out.println("More stores");
+        }
+        else {
+            System.out.println("Problem occured during counting");
+        }
+
 
         // Пошук та виведення орендаря з максимальною орендою
         // Потрібне приведення типів, оскільки компілятор знає лише про `Object` через wildcard `? super`

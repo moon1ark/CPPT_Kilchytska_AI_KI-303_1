@@ -1,0 +1,10 @@
+﻿<Page x:Class="DormitoryApp.Views.CheckStatusPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="CheckStatusPage">
+    <StackPanel Margin="20">
+        <TextBlock Text="Статус вашої заявки" Foreground="White" FontSize="24" Margin="0,0,0,20"/>
+        <Button Content="Оновити статус" Width="200" Click="CheckStatusButton_Click"/>
+        <TextBlock x:Name="StatusResultTextBlock" Text="Натисніть 'Оновити'..." FontSize="16" Foreground="Yellow" TextWrapping="Wrap" Margin="0,20"/>
+    </StackPanel>
+</Page>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="DormitoryApp.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Особистий кабінет" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Background="#FF2D333B" Margin="0,0,5,0">
+            <TextBlock x:Name="WelcomeTextBlock" Text="Вітаємо, ..." Foreground="White" FontSize="16" Margin="10" TextWrapping="Wrap"/>
+            <Button Content="Подати заявку" Click="SubmitPage_Click"/>
+            <Button Content="Редагувати заявку" Click="EditPage_Click"/>
+            <Button Content="Перевірити статус" Click="StatusPage_Click"/>
+            <Button Content="Вийти з системи" Click="LogoutButton_Click" VerticalAlignment="Bottom" Margin="10,200,10,10"/>
+        </StackPanel>
+
+        <Frame Grid.Column="1" x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

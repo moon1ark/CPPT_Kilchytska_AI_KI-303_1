@@ -1,0 +1,22 @@
+﻿<Page x:Class="DormitoryApp.Views.EditApplicationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="EditApplicationPage">
+    <StackPanel Margin="20">
+        <TextBlock Text="Редагування заявки" Foreground="White" FontSize="24" Margin="0,0,0,20"/>
+
+        <Label Content="Прізвище та ім'я:"/>
+        <TextBox x:Name="FullNameTextBox"/>
+
+        <Label Content="Номер студентського:"/>
+        <TextBox x:Name="StudentIdTextBox"/>
+
+        <Label Content="Причина (напр., пільги, перший курс):"/>
+        <TextBox x:Name="ReasonTextBox" Height="100" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+        <Button Content="Оновити дані" Click="LoadDataButton_Click" ToolTip="Завантажити ваші поточні дані"/>
+        <Button Content="Зберегти зміни" Margin="0,15,0,0" Click="SaveButton_Click"/>
+
+        <TextBlock x:Name="StatusTextBlock" Foreground="LightGreen" Margin="0,10"/>
+    </StackPanel>
+</Page>

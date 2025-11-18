@@ -1,0 +1,18 @@
+﻿<Window x:Class="DormitoryApp.Views.AvailabilityWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Вільні місця" Height="300" Width="400"
+        WindowStartupLocation="CenterOwner"
+        Loaded="Window_Loaded">
+    <Grid Margin="10">
+        <DataGrid x:Name="RoomsGrid" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Кімната" Binding="{Binding RoomNumber}" Width="*"/>
+                <DataGridTextColumn Header="Поверх" Binding="{Binding Floor}" Width="*"/>
+                <DataGridTextColumn Header="Зайнято" Binding="{Binding Occupied}" Width="Auto"/>
+                <DataGridTextColumn Header="Всього місць" Binding="{Binding Capacity}" Width="Auto"/>
+                <DataGridTextColumn Header="Вільних місць" Binding="{Binding AvailableSeats}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
