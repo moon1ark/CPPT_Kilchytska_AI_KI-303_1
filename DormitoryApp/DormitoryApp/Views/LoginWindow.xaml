@@ -1,0 +1,23 @@
+﻿<Window x:Class="DormitoryApp.Views.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Система гуртожитку - Вхід" Height="450" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" Margin="20">
+            <Image Source="/logo.png" Height="100" Margin="10"/>
+
+            <Label Content="Логін:"/>
+            <TextBox x:Name="LoginTextBox"/>
+
+            <Label Content="Пароль:"/>
+            <PasswordBox x:Name="UserPasswordBox" Margin="5"/>
+
+            <Button Content="Вхід" Click="LoginButton_Click"/>
+            <Button Content="Реєстрація" Click="RegisterButton_Click"/>
+
+            <TextBlock x:Name="StatusTextBlock" Foreground="Red" Margin="0,10" 
+                       TextWrapping="Wrap" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>

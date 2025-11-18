@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MxId4n0RHvM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adria\\OneDrive\\Desktop\\dz\\3_kyrs\\1_semestr\\IPZ\\DormitoryApp\\DormitoryServer\\DormitoryServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adria\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.119\\stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512"
+  ],
+  "logs": []
+}

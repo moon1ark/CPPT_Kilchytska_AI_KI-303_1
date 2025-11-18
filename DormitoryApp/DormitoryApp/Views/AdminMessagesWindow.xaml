@@ -1,0 +1,13 @@
+﻿<Window x:Class="DormitoryApp.Views.AdminMessagesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Розсилка повідомлень" Height="300" Width="400"
+        WindowStartupLocation="CenterOwner">
+    <StackPanel Margin="10">
+        <Label Content="Отримувач (логін студента або 'Всі'):"/>
+        <TextBox x:Name="TargetLoginTxt" Text="Всі"/>
+        <Label Content="Текст повідомлення:"/>
+        <TextBox x:Name="MessageTextTxt" Height="100"/>
+        <Button Content="Надіслати" Margin="0,10" Click="SendButton_Click"/>
+    </StackPanel>
+</Window>

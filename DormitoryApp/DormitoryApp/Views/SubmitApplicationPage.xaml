@@ -1,0 +1,16 @@
+﻿<Page x:Class="DormitoryApp.Views.SubmitApplicationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="SubmitApplicationPage">
+    <StackPanel Margin="20">
+        <TextBlock Text="Подання заявки на поселення" Foreground="White" FontSize="24" Margin="0,0,0,20"/>
+        <Label Content="Прізвище та ім'я:"/>
+        <TextBox x:Name="FullNameTextBox"/>
+        <Label Content="Номер студентського:"/>
+        <TextBox x:Name="StudentIdTextBox"/>
+        <Label Content="Причина (напр., пільги, перший курс):"/>
+        <TextBox x:Name="ReasonTextBox" Height="100" TextWrapping="Wrap" AcceptsReturn="True"/>
+        <Button Content="Надіслати заявку" Margin="0,15,0,0" Click="SubmitButton_Click"/>
+        <TextBlock x:Name="SubmitStatusTextBlock" Foreground="LightGreen" Margin="0,10"/>
+    </StackPanel>
+</Page>

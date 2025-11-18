@@ -1,0 +1,18 @@
+﻿<Window x:Class="DormitoryApp.Views.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Панель Адміністратора" Height="400" Width="500" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <StackPanel>
+            <Label Content="Панель Адміністратора" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+
+            <UniformGrid Columns="2" Rows="3" Margin="0,20">
+                <Button Content="Управління заявками" Click="OpenApps_Click"/>
+                <Button Content="Список мешканців" Click="OpenResidents_Click"/>
+                <Button Content="Розсилка повідомлень" Click="OpenAdminMsg_Click"/>
+                <Button Content="Звіти" Click="OpenReports_Click"/>
+                <Button Content="Вихід" Background="#FFCCCC" Click="Logout_Click"/>
+            </UniformGrid>
+        </StackPanel>
+    </Grid>
+</Window>

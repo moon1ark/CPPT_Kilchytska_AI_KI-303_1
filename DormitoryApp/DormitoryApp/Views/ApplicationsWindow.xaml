@@ -1,0 +1,35 @@
+﻿<Window x:Class="DormitoryApp.Views.ApplicationsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Управління заявками" Height="450" Width="700"
+        WindowStartupLocation="CenterOwner"
+        Loaded="Window_Loaded">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Список отриманих заявок:" FontSize="16" FontWeight="Bold"/>
+
+        <DataGrid Grid.Row="1" Margin="0,10,0,10" AutoGenerateColumns="False" CanUserAddRows="False"
+                  x:Name="ApplicationsGrid">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Header="Обрати" Binding="{Binding IsSelected}" Width="60"/>
+                <DataGridTextColumn Header="ПІБ Студента" Binding="{Binding FullName}" Width="*"/>
+                <DataGridTextColumn Header="Студентський" Binding="{Binding StudentId}" Width="120"/>
+                <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="100"/>
+                <DataGridTextColumn Header="Примітка" Binding="{Binding Reason}" Width="*"/>
+                <DataGridTextColumn Header="Логін" Binding="{Binding UserLogin}" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Label Content="Поселити в кімнату:"/>
+            <ComboBox x:Name="RoomsComboBox" Width="100" Margin="0,0,10,0"/>
+            <Button Content="Прийняти обрані" Click="ApproveButton_Click" Background="#B0FFB0"/>
+            <Button Content="Відхилити обрані" Click="RejectButton_Click" Background="#FFB0B0"/>
+        </StackPanel>
+    </Grid>
+</Window>

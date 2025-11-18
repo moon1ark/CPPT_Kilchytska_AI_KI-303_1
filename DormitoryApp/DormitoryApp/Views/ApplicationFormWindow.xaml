@@ -1,0 +1,14 @@
+﻿<Window x:Class="DormitoryApp.Views.ApplicationFormWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Подання заявки" Height="350" Width="400">
+    <StackPanel Margin="15">
+        <Label Content="ПІБ:"/>
+        <TextBox x:Name="NameTxt"/>
+        <Label Content="Студентський квиток:"/>
+        <TextBox x:Name="IdTxt"/>
+        <Label Content="Примітка (пільги):"/>
+        <TextBox Height="60" x:Name="NoteTxt"/>
+        <Button Content="Надіслати" Click="Submit_Click" Margin="0,10"/>
+    </StackPanel>
+</Window>
